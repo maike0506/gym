@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            background-color: gray;
+        }
+        #espalda3 {
+    width: 300px;
+    height: auto;
+    margin-bottom: 10px; /* Asegura separación entre elementos */
+    }
+        ol li {
+            font-weight: bold;
+        }
+        ol button {
+            background-color: yellow;
+        }
+    </style>
+</head>
+<body>
+    <ol>
+        <li>REMO CON BARRA (4 series)</li><br>
+        <img src="espalda1.png" alt="error al cargar la imagen"><br><br>
+        <button id="btn1">click > como hacerlo??</button>
+        <p id="contenido1"></p>
+        
+        <br><br><br><br>
+        <li>JALON AL PECHO (4 series)</li><br>
+        <img src="espalda2.png" alt="error"><br><br>
+        <button id="btn2">click > como hacerlo??</button>
+        <p id="contenido2"></p>
+        
+        <br><br><br><br>
+        <li>JALON EN POLEA CON AGARRE CERRADO (4 series)</li><br>
+        <img src="espalda3.png" alt="error" id="espalda3"><br><br>
+        <button id="btn3">click para ver el contenido</button>
+        <p id="contenido3"></p>
+    </ol>
+    <script>
+        const boton1 = document.getElementById("btn1");
+        const content1 = document.getElementById("contenido1");
+        const ejercicio1 = "Se realiza inclinando el cuerpo hacia adelante, manteniendo la espalda recta, y tirando de la barra hacia el abdomen.";
+        
+        boton1.addEventListener("click", () => {
+            content1.textContent = ejercicio1;
+            setTimeout(() => {
+                alert("Gracias por hacer click");
+            }, 2000);
+        });
+
+        const boton2 = document.getElementById("btn2");
+        const content2 = document.getElementById("contenido2");
+        const ejercicio2 = "Se realiza en una máquina de polea alta, agarrando la barra y tirando de ella hacia el pecho. Trabaja principalmente el dorsal ancho y los romboides.";
+
+        boton2.addEventListener("click", () => {
+            content2.textContent = ejercicio2;
+        });
+
+        const boton3 = document.getElementById("btn3");
+        const content3 = document.getElementById("contenido3");
+        const ejercicio3 = "Se realiza en una máquina de polea baja con agarre cerrado. Mantén la espalda recta y lleva la barra hacia el abdomen.";
+
+        boton3.addEventListener("click", () => {
+            content3.textContent = ejercicio3;
+        });
+    </script>
+</body>
+</html>

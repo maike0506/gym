@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+             background-color: gray;
+        }
+        #ESPALDA img{
+               position: relative;
+               width: 300px;
+                height: auto;
+                top: 20px;
+
+        }
+         #ESPALDA li {
+             position: relative;
+            font-weight: bold;             
+ 
+         }
+        #PECHO img  {
+
+            position: relative;
+             width: 230px;
+             height: none;
+             left: 400px;
+            bottom: 230px;
+        }
+        #PECHO li {
+            position: relative;
+            left: 400px;
+            bottom: 250px;
+            font-weight: bold;          
+        }
+    </style>
+</head>
+<body>
+    <h1>EJERCICIOS GYM</h1>
+
+ <div id="ESPALDA">
+  
+  <ul>
+     <li> EJERCICIOS DE ESPALDA</li>
+      <img src="espalda.png" alt="error al cargar la imagen" id="imen1">
+  </ul>
+
+ </div>
+
+
+<div id="PECHO">
+ 
+ <ul>
+    <li>EJERCICIOS PECTORAL</li>
+     <img src="Screenshot 2025-01-01 180222.png" alt= "error al cargar la imagen" id="imen2">
+
+
+    </ul> <br>
+  
+
+</div>
+
+
+
+
+</body>
+</html>
+
+<script>
+     const imag=document.getElementById("imen1")
+     const imag2=document.getElementById("imen2")
+
+ 
+ imag.addEventListener("click",() => {
+
+  window.location.href="ejerciciosespalda.html"
+ })
+
+ 
+ imag2.addEventListener("click",() => {
+
+window.location.href="ejerciciospecho.html"
+})
+
+</script>

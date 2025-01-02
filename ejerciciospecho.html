@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+
+            background-color:grey;
+
+        }
+        ol li {
+            font-weight: bold;
+        }
+        ol button {
+
+            background-color: aqua;
+        }
+        #flechita {
+             position: relative;
+              left: 250px;
+             width: 20px;
+             animation-duration: s;
+             animation-name: slidein ;
+        }
+        #dos{
+             position: relative;
+             left: 280px;
+            bottom: 40px;
+        }
+        @keyframes slidein {
+            from {
+                margin-left: 100%;
+                width: 50%;
+            } to {
+                  margin-left: 0%;
+                  widows: 100% ;
+
+            }
+        }
+           
+    </style>
+</head>
+<body>
+    <h1>PECHO</h1>
+
+ <ol>
+     <li>press banca plano ( 4 series) </li>
+      <img src="pecho1.png" alt="error" id="btn1"> <br><br>
+      <img src="flechita.png" alt="error" id="flechita">
+      <p id="dos">haga click > imagen</p>
+       
+ <br><br><br><br><br>
+
+
+
+      <li> press banca inclinado ( 4 series)</li>
+      <img src="pecho2.png" alt="error" id="btn2"> <br><br>
+      <img src="flechita.png" alt="error" id="flechita">
+       <p id="dos"> haga click > imagen</p>
+
+<br><br><br><br><br>
+
+
+
+
+       <li>enpuje en maquina ( 4 series ) </li>
+       <img src="pecho3.png" alt="error" id="btn3"> <br><br>
+       <img src="flechita.png" alt="error" id="flechita">
+       <p id="dos"> haga click > imagen</p>
+
+
+
+
+
+
+
+
+
+
+
+
+ </ol>
+</body>
+</html>
+<script>
+   const boton1=document.getElementById("btn1")
+   const contenido=document.getElementById("contenido1")
+   
+     
+   
+   boton1.addEventListener("click",() => {
+    
+    window.alert(" Es un ejercicio fundamental para trabajar el pectoral mayor. Se realiza acostado en un banco plano, empujando una barra hacia arriba hasta extender completamente los brazos.")
+
+   })
+   
+   const boton2=document.getElementById("btn2")
+   const contenido2=document.getElementById("contenido2")
+  
+   
+  
+  boton2.addEventListener("click",() => {
+    
+    window.alert("Similar al press banca plano, pero con el banco inclinado hacia arriba. Esto permite trabajar la parte superior del pectoral mayor.")
+   })
+
+
+   
+   const boton3=document.getElementById("btn3")
+   const contenido3=document.getElementById("contenido3")
+  
+
+
+  boton3.addEventListener("click",() => {
+    
+    window.alert ("Se realiza en una máquina específica, empujando dos mancuernas hacia el frente. Este ejercicio permite trabajar los pectorales, los deltoides anteriores y los tríceps.")
+   })
+</script>
