@@ -19,26 +19,41 @@
         ol button {
             background-color: yellow;
         }
+        .movie {
+            display: grid;
+            grid-template-columns: repeat(
+                auto-fit,
+                minmax(
+                    150px
+                    1fr
+                
+            )
+                )
+    
+            }
+    
     </style>
 </head>
 <body>
-    <ol>
-        <li>REMO CON BARRA (4 series)</li><br>
-        <img src="espalda1.png" alt="error al cargar la imagen" id="btn1"><br><br>
-        <p id="contenido1"></p>
-        
-        <br><br><br><br>
-        <li>JALON AL PECHO (4 series)</li><br>
-        <img src="espalda2.png" alt="error" id="btn2"><br><br>
-        <p id="contenido2"></p>
-        
-        
-        <br><br><br><br>
-        <li>JALON EN POLEA CON AGARRE CERRADO (4 series)</li><br>
-        <img src="espalda3.png" alt="error" class="espalda3" id="btn3"><br><br>
-        <p id="contenido3"></p>
-        
-    </ol>
+    <div class="movie">
+        <ol>
+            <li>REMO CON BARRA (4 series)</li><br>
+            <img src="espalda1.png" alt="error al cargar la imagen" id="btn1"><br><br>
+            <p id="contenido1"></p>
+            
+            <br><br><br><br>
+            <li>JALON AL PECHO (4 series)</li><br>
+            <img src="espalda2.png" alt="error" id="btn2"><br><br>
+            <p id="contenido2"></p>
+            
+            
+            <br><br><br><br>
+            <li>JALON EN POLEA CON AGARRE CERRADO (4 series)</li><br>
+            <img src="espalda3.png" alt="error" class="espalda3" id="btn3"><br><br>
+            <p id="contenido3"></p>
+            
+        </ol>    
+    </div>
     <script>
         const boton1 = document.getElementById("btn1");
         const content1 = document.getElementById("contenido1");
